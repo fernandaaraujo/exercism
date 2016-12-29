@@ -16,7 +16,7 @@ public class Etl {
                     case "G":
                         expected.put(oldString.toLowerCase(), 2);
                         break;
-                        
+
                     case "B":
                     case "C":
                     case "M":
