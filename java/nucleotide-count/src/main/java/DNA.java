@@ -23,9 +23,15 @@ public class DNA {
 
     public int count(char dnaPiece) {
         int count = 0;
-        for(int i =0; i < dna.length(); i++)
-            if(dna.charAt(i) == dnaPiece)
-                count++;
+        String dnaSequence = "ACGT";
+
+        if (dnaSequence.contains(Character.toString(dnaPiece))) {
+            for (int i = 0; i < dna.length(); i++)
+                if (dna.charAt(i) == dnaPiece)
+                    count++;
+        } else {
+            throw new IllegalArgumentException();
+        }
 
         return count;
     }
